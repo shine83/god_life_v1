@@ -14,7 +14,7 @@ import 'package:my_new_test_app/providers/tutorial_provider.dart';
 import 'package:my_new_test_app/work_stats_page.dart';
 import 'package:intl/intl.dart';
 
-// ✅ 추가: 알림 테스트 호출
+// ✅ 유지: 테스트 함수에서 사용 (버튼만 주석처리됨)
 import 'package:my_new_test_app/services/notification_service.dart';
 
 const Color _kDefaultEventColor = Color(0xFF6C4CE8);
@@ -241,7 +241,7 @@ class _WorkSchedulePageState extends ConsumerState<WorkSchedulePage> {
     }
   }
 
-  // ✅ 추가: 알림 테스트(10초 후)
+  // ✅ 유지: 알림 테스트(10초 후) — 버튼만 숨김
   Future<void> _testNotification(BuildContext context) async {
     await NotificationService.I.scheduleTestIn10s(alarmStyle: true);
     if (context.mounted) {
@@ -305,22 +305,26 @@ class _WorkSchedulePageState extends ConsumerState<WorkSchedulePage> {
             icon: const Icon(Icons.add_circle_outline),
             tooltip: '패턴으로 일정 추가',
           ),
-          IconButton(
-            tooltip: '새로고침',
-            onPressed: () => _hardRefresh(ref),
-            icon: const Icon(Icons.refresh),
-          ),
+
+          // 🗑️ 요청 반영: 새로고침 버튼 **삭제**
+          // IconButton(
+          //   tooltip: '새로고침',
+          //   onPressed: () => _hardRefresh(ref),
+          //   icon: const Icon(Icons.refresh),
+          // ),
+
           IconButton(
             tooltip: '전체 삭제',
             onPressed: () => _deleteAllConfirm(context, ref),
             icon: const Icon(Icons.delete_forever_outlined),
           ),
-          // ✅ 추가: 10초 후 알림 테스트
-          IconButton(
-            tooltip: '10초 후 알림 테스트',
-            onPressed: () => _testNotification(context),
-            icon: const Icon(Icons.alarm_add),
-          ),
+
+          // 💤 요청 반영: 10초 후 알림 테스트 버튼 **주석 처리(숨김)**
+          // IconButton(
+          //   tooltip: '10초 후 알림 테스트',
+          //   onPressed: () => _testNotification(context),
+          //   icon: const Icon(Icons.alarm_add),
+          // ),
         ],
       ),
       body: scheduleState.when(

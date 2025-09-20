@@ -32,7 +32,20 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
   @override
   void initState() {
     super.initState();
+    // ✅ 서비스의 상태가 변경될 때마다 이 페이지의 setState를 호출하도록 등록
+    NotificationService.I.onPreviewStateChanged = () {
+      if (mounted) {
+        setState(() {});
+      }
+    };
     _bootstrap();
+  }
+
+  // ✅ 페이지가 사라질 때 리스너를 해제하는 dispose 메소드 추가
+  @override
+  void dispose() {
+    NotificationService.I.onPreviewStateChanged = null;
+    super.dispose();
   }
 
   Future<void> _bootstrap() async {
@@ -302,14 +315,29 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                           if (selected)
                             Icon(Icons.check_circle,
                                 size: 20, color: cs.primary),
-                          IconButton(
-                            tooltip: '바로듣기',
-                            icon: const Icon(Icons.play_arrow),
-                            onPressed: () async {
-                              await NotificationService.I
-                                  .playPreview(key: e.key);
-                            },
-                          ),
+                          // ...
+                          // ...
+// --- ✅ 수정된 재생/정지 버튼 ---
+                          Builder(builder: (context) {
+                            // 이 버튼에 해당하는 소리가 현재 재생 중인지 확인합니다.
+                            final isCurrentlyPlaying = NotificationService
+                                    .I.isPreviewing &&
+                                NotificationService.I.previewingKey == e.key;
+
+                            return IconButton(
+                              tooltip: isCurrentlyPlaying ? '정지' : '바로듣기',
+                              // 상태에 따라 아이콘을 변경합니다.
+                              icon: Icon(isCurrentlyPlaying
+                                  ? Icons.stop_circle_outlined
+                                  : Icons.play_circle_outline),
+                              onPressed: () async {
+                                // 재생/정지를 토글하고 UI를 새로고침합니다.
+                                await NotificationService.I
+                                    .togglePreview(key: e.key);
+                                setState(() {});
+                              },
+                            );
+                          })
                         ],
                       ),
                       onTap: () async {

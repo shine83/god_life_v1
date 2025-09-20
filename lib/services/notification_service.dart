@@ -49,6 +49,9 @@ class NotificationService {
   bool _isPreviewing = false;
   String? _previewingKey;
 
+  // ✅ UI 갱신을 위한 콜백 변수 추가
+  VoidCallback? onPreviewStateChanged;
+
   bool get isPreviewing => _isPreviewing;
   String? get previewingKey => _previewingKey;
 

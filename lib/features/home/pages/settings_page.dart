@@ -7,7 +7,6 @@ import 'package:my_new_test_app/features/health_connect/pages/health_connect_pag
 import 'package:my_new_test_app/features/home/pages/friend_management_page.dart';
 import 'package:my_new_test_app/features/home/pages/profile_page.dart';
 import 'package:my_new_test_app/features/home/pages/system_settings_page.dart';
-import 'package:my_new_test_app/features/onboarding/tutorial_service.dart';
 import 'package:my_new_test_app/providers/tutorial_provider.dart';
 import 'package:my_new_test_app/services/schedule_notifier.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -180,25 +179,6 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
                   builder: (_) => NotificationSettingsPage(), // 심볼 보장
                 ),
               );
-            },
-          ),
-
-          // 튜토리얼 다시보기
-          ListTile(
-            leading: const Icon(Icons.help_outline),
-            title: Text('튜토리얼 다시보기', style: itemText),
-            onTap: () async {
-              await GuidedTourController.resetAllTutorials();
-              ref.read(calendarTutorialRequestProvider.notifier).state = true;
-
-              if (mounted) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('튜토리얼이 초기화되었습니다. 캘린더 탭으로 이동하여 확인하세요.'),
-                    duration: Duration(seconds: 3),
-                  ),
-                );
-              }
             },
           ),
 

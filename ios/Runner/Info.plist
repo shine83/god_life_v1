@@ -49,5 +49,17 @@
 	<string>운동 및 건강 데이터를 읽어와 앱에 표시하기 위해 권한이 필요합니다.</string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>새로운 운동 및 건강 데이터를 기록하기 위해 권한이 필요합니다.</string>
+    
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>96532019097-nu9m303qil6bika9v2sh9n9lu21vrq5h.apps.googleusercontent.com</string>
+            </array>
+        </dict>
+    </array>
 </dict>
 </plist>

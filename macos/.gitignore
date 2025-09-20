@@ -1,7 +1,29 @@
-# Flutter-related
-**/Flutter/ephemeral/
-**/Pods/
+# Miscellaneous
+*.class
+*.lock
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
 
-# Xcode-related
-**/dgph
-**/xcuserdata/
+# Flutter/Dart
+/build/
+/.dart_tool/
+/.packages
+/.pub-cache/
+/.pub/
+
+# IDE files
+/.idea/
+/.vscode/
+*.iml
+
+# Sensitive files
+/ios/Flutter/App.framework
+/ios/Flutter/engine.framework
+*.env
+local.properties

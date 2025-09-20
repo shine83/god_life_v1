@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_new_test_app/features/ai/pages/ai_hub_page.dart';
-import 'package:my_new_test_app/features/authentication/pages/login_page.dart';
-import 'package:my_new_test_app/features/authentication/viewmodel/auth_viewmodel.dart'; // ✅ 누락되었던 import
-import 'package:my_new_test_app/features/home/pages/community_page.dart';
-import 'package:my_new_test_app/features/home/pages/settings_page.dart';
-import 'package:my_new_test_app/features/home/pages/share_page.dart';
-import 'package:my_new_test_app/features/work_schedule/page/work_schedule_page.dart';
-import 'package:my_new_test_app/providers/tutorial_provider.dart';
-import 'package:my_new_test_app/services/ai_service.dart';
+import 'package:god_life_v1/features/ai/pages/ai_hub_page.dart';
+import 'package:god_life_v1/features/authentication/pages/login_page.dart';
+import 'package:god_life_v1/features/authentication/viewmodel/auth_viewmodel.dart'; // ✅ 누락되었던 import
+import 'package:god_life_v1/features/home/pages/community_page.dart';
+import 'package:god_life_v1/features/home/pages/settings_page.dart';
+import 'package:god_life_v1/features/home/pages/share_page.dart';
+import 'package:god_life_v1/features/work_schedule/page/work_schedule_page.dart';
+import 'package:god_life_v1/providers/tutorial_provider.dart';
+import 'package:god_life_v1/services/ai_service.dart';
 
 class HomePage extends ConsumerWidget {
   const HomePage({super.key});

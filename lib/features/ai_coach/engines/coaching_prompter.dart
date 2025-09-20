@@ -1,4 +1,4 @@
-import 'package:my_new_test_app/features/ai_coach/engines/recovery_engine.dart';
+import 'package:god_life_v1/features/ai_coach/engines/recovery_engine.dart';
 
 /// 교대근무자 맞춤 코칭 프롬프트 생성기 (이모지 소제목 스타일, 굵은표기 제거)
 class CoachingPrompter {

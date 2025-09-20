@@ -1,7 +1,7 @@
 // lib/services/work_schedule_service.dart
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'package:my_new_test_app/core/models/work_schedule.dart';
-import 'package:my_new_test_app/services/notification_service.dart';
+import 'package:god_life_v1/core/models/work_schedule.dart';
+import 'package:god_life_v1/services/notification_service.dart';
 
 class WorkScheduleService {
   final SupabaseClient _sp = Supabase.instance.client;

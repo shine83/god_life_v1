@@ -6,24 +6,24 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_new_test_app/core/auth/auth_gate.dart';
-import 'package:my_new_test_app/core/theme/app_theme.dart';
-import 'package:my_new_test_app/features/authentication/pages/login_page.dart';
-import 'package:my_new_test_app/features/authentication/pages/magic_link_login_page.dart';
-import 'package:my_new_test_app/features/authentication/pages/reset_password_page.dart';
-import 'package:my_new_test_app/features/authentication/pages/signup_page.dart';
-import 'package:my_new_test_app/features/home/pages/friend_management_page.dart';
-import 'package:my_new_test_app/features/home/pages/home_page.dart';
-import 'package:my_new_test_app/features/onboarding/pages/onboarding_page.dart';
-import 'package:my_new_test_app/providers/app_settings_provider.dart';
-import 'package:my_new_test_app/services/notification_service.dart';
-import 'package:my_new_test_app/services/work_schedule_service.dart';
+import 'package:god_life_v1/core/auth/auth_gate.dart';
+import 'package:god_life_v1/core/theme/app_theme.dart';
+import 'package:god_life_v1/features/authentication/pages/login_page.dart';
+import 'package:god_life_v1/features/authentication/pages/magic_link_login_page.dart';
+import 'package:god_life_v1/features/authentication/pages/reset_password_page.dart';
+import 'package:god_life_v1/features/authentication/pages/signup_page.dart';
+import 'package:god_life_v1/features/home/pages/friend_management_page.dart';
+import 'package:god_life_v1/features/home/pages/home_page.dart';
+import 'package:god_life_v1/features/onboarding/pages/onboarding_page.dart';
+import 'package:god_life_v1/providers/app_settings_provider.dart';
+import 'package:god_life_v1/services/notification_service.dart';
+import 'package:god_life_v1/services/work_schedule_service.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 // ✅ AI 추천 상세 페이지
-import 'package:my_new_test_app/features/ai/pages/ai_recommendation_detail_page.dart';
+import 'package:god_life_v1/features/ai/pages/ai_recommendation_detail_page.dart';
 
 /// 최초 1회 알림권한 안내 다이얼로그 표시 여부 키
 const String _notifPromptedKey = 'notif_perm_prompted_v2';

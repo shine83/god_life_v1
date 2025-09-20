@@ -1,8 +1,8 @@
 // lib/features/home/pages/system_settings_page.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_new_test_app/features/settings/notification_settings_page.dart';
-import 'package:my_new_test_app/providers/app_settings_provider.dart';
+import 'package:god_life_v1/features/settings/notification_settings_page.dart';
+import 'package:god_life_v1/providers/app_settings_provider.dart';
 
 class SystemSettingsPage extends ConsumerWidget {
   const SystemSettingsPage({super.key});

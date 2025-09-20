@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_new_test_app/features/authentication/pages/login_page.dart';
-import 'package:my_new_test_app/features/home/pages/home_page.dart';
-import 'package:my_new_test_app/providers/tutorial_provider.dart';
-import 'package:my_new_test_app/services/work_schedule_service.dart';
+import 'package:god_life_v1/features/authentication/pages/login_page.dart';
+import 'package:god_life_v1/features/home/pages/home_page.dart';
+import 'package:god_life_v1/providers/tutorial_provider.dart';
+import 'package:god_life_v1/services/work_schedule_service.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 // ✨ [수정] ConsumerStatefulWidget으로 변경하여 Riverpod(ref)에 접근합니다.

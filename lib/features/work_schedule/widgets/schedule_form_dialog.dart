@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_new_test_app/core/models/shift_type.dart';
-import 'package:my_new_test_app/features/onboarding/tutorial_service.dart';
-import 'package:my_new_test_app/features/work_schedule/utils/shift_alias_resolver.dart';
-import 'package:my_new_test_app/features/work_schedule/widgets/learn_alias_dialog.dart';
-import 'package:my_new_test_app/services/schedule_notifier.dart';
-import 'package:my_new_test_app/services/work_schedule_service.dart';
+import 'package:god_life_v1/core/models/shift_type.dart';
+import 'package:god_life_v1/features/onboarding/tutorial_service.dart';
+import 'package:god_life_v1/features/work_schedule/utils/shift_alias_resolver.dart';
+import 'package:god_life_v1/features/work_schedule/widgets/learn_alias_dialog.dart';
+import 'package:god_life_v1/services/schedule_notifier.dart';
+import 'package:god_life_v1/services/work_schedule_service.dart';
 import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

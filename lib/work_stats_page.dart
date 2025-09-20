@@ -1,6 +1,6 @@
 // lib/work_stats_page.dart
 import 'package:flutter/material.dart';
-import 'package:my_new_test_app/services/work_schedule_service.dart';
+import 'package:god_life_v1/services/work_schedule_service.dart';
 import 'package:intl/intl.dart';
 
 class WorkStatsPage extends StatefulWidget {

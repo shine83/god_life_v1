@@ -1,8 +1,8 @@
 // lib/features/settings/notification_settings_page.dart
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:my_new_test_app/core/premium/premium_gate_compat.dart';
-import 'package:my_new_test_app/services/notification_service.dart';
+import 'package:god_life_v1/core/premium/premium_gate_compat.dart';
+import 'package:god_life_v1/services/notification_service.dart';
 
 class NotificationSettingsPage extends StatefulWidget {
   const NotificationSettingsPage({super.key});

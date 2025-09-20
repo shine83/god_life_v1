@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
-import 'package:my_new_test_app/services/health_service.dart' as hs;
+import 'package:god_life_v1/services/health_service.dart' as hs;
 
 /// 섹션 타입
 enum AiSection { condition, workout, sleep, stress }

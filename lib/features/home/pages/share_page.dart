@@ -4,15 +4,15 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-import 'package:my_new_test_app/core/models/calendar_event.dart';
-import 'package:my_new_test_app/features/work_schedule/widgets/custom_calendar.dart';
-import 'package:my_new_test_app/features/home/pages/friend_management_page.dart';
+import 'package:god_life_v1/core/models/calendar_event.dart';
+import 'package:god_life_v1/features/work_schedule/widgets/custom_calendar.dart';
+import 'package:god_life_v1/features/home/pages/friend_management_page.dart';
 
 // 전역 설정 (개인정보 공개 범위)
-import 'package:my_new_test_app/providers/app_settings_provider.dart';
+import 'package:god_life_v1/providers/app_settings_provider.dart';
 
 // ✅ 친구목록 Provider는 외부 파일 것을 씁니다 (중복 정의 금지)
-import 'package:my_new_test_app/features/home/providers/friends_provider.dart'
+import 'package:god_life_v1/features/home/providers/friends_provider.dart'
     as fp;
 
 /// ------------------------------------------------------------

@@ -2,9 +2,9 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_new_test_app/core/models/calendar_event.dart';
-import 'package:my_new_test_app/core/services/korean_holidays_service.dart';
-import 'package:my_new_test_app/providers/app_settings_provider.dart';
+import 'package:god_life_v1/core/models/calendar_event.dart';
+import 'package:god_life_v1/core/services/korean_holidays_service.dart';
+import 'package:god_life_v1/providers/app_settings_provider.dart';
 
 class CustomCalendar extends ConsumerStatefulWidget {
   const CustomCalendar({

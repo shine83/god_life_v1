@@ -2,20 +2,20 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_new_test_app/core/models/calendar_event.dart';
-import 'package:my_new_test_app/features/onboarding/pages/onboarding_page.dart';
-import 'package:my_new_test_app/features/onboarding/tutorial_service.dart';
-import 'package:my_new_test_app/features/work_schedule/utils/shift_alias_resolver.dart';
-import 'package:my_new_test_app/features/work_schedule/widgets/add_single_schedule_dialog.dart';
-import 'package:my_new_test_app/features/work_schedule/widgets/custom_calendar.dart';
-import 'package:my_new_test_app/features/work_schedule/widgets/schedule_form_dialog.dart';
-import 'package:my_new_test_app/providers/schedule_provider.dart';
-import 'package:my_new_test_app/providers/tutorial_provider.dart';
-import 'package:my_new_test_app/work_stats_page.dart';
+import 'package:god_life_v1/core/models/calendar_event.dart';
+import 'package:god_life_v1/features/onboarding/pages/onboarding_page.dart';
+import 'package:god_life_v1/features/onboarding/tutorial_service.dart';
+import 'package:god_life_v1/features/work_schedule/utils/shift_alias_resolver.dart';
+import 'package:god_life_v1/features/work_schedule/widgets/add_single_schedule_dialog.dart';
+import 'package:god_life_v1/features/work_schedule/widgets/custom_calendar.dart';
+import 'package:god_life_v1/features/work_schedule/widgets/schedule_form_dialog.dart';
+import 'package:god_life_v1/providers/schedule_provider.dart';
+import 'package:god_life_v1/providers/tutorial_provider.dart';
+import 'package:god_life_v1/work_stats_page.dart';
 import 'package:intl/intl.dart';
 
 // ✅ 유지: 테스트 함수에서 사용 (버튼만 주석처리됨)
-import 'package:my_new_test_app/services/notification_service.dart';
+import 'package:god_life_v1/services/notification_service.dart';
 
 const Color _kDefaultEventColor = Color(0xFF6C4CE8);
 

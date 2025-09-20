@@ -3,12 +3,12 @@ import 'dart:async';
 import 'dart:ui' show ImageFilter;
 
 import 'package:flutter/material.dart';
-import 'package:my_new_test_app/core/models/work_schedule.dart';
-import 'package:my_new_test_app/features/ai_coach/engines/coaching_prompter.dart';
-import 'package:my_new_test_app/features/ai_coach/engines/recovery_engine.dart';
-import 'package:my_new_test_app/services/ai_service.dart';
-import 'package:my_new_test_app/services/health_service.dart';
-import 'package:my_new_test_app/services/work_schedule_service.dart';
+import 'package:god_life_v1/core/models/work_schedule.dart';
+import 'package:god_life_v1/features/ai_coach/engines/coaching_prompter.dart';
+import 'package:god_life_v1/features/ai_coach/engines/recovery_engine.dart';
+import 'package:god_life_v1/services/ai_service.dart';
+import 'package:god_life_v1/services/health_service.dart';
+import 'package:god_life_v1/services/work_schedule_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AiCoachPage extends StatefulWidget {

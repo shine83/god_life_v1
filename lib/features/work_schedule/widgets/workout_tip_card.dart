@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_new_test_app/services/ai_service.dart';
+import 'package:god_life_v1/services/ai_service.dart';
 
 class WorkoutTipCard extends StatefulWidget {
   const WorkoutTipCard({

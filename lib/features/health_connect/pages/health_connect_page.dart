@@ -2,9 +2,9 @@
 import 'dart:io' show Platform;
 
 import 'package:flutter/material.dart';
-import 'package:my_new_test_app/features/health_connect/health_permissions.dart'
+import 'package:god_life_v1/features/health_connect/health_permissions.dart'
     as hp;
-import 'package:my_new_test_app/services/health_service.dart';
+import 'package:god_life_v1/services/health_service.dart';
 import 'package:health/health.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';

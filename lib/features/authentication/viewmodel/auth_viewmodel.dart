@@ -2,7 +2,7 @@
 
 import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_new_test_app/features/authentication/repository/auth_repository.dart';
+import 'package:god_life_v1/features/authentication/repository/auth_repository.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 final authViewModelProvider = AsyncNotifierProvider<AuthViewModel, User?>(() {

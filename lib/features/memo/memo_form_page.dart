@@ -1,7 +1,7 @@
 // lib/features/memo/memo_form_page.dart
 
 import 'package:flutter/material.dart';
-import 'package:my_new_test_app/services/memo_service.dart';
+import 'package:god_life_v1/services/memo_service.dart';
 import 'package:intl/intl.dart';
 
 class MemoFormPage extends StatefulWidget {

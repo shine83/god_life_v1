@@ -2,13 +2,13 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_new_test_app/features/authentication/pages/login_page.dart';
-import 'package:my_new_test_app/features/health_connect/pages/health_connect_page.dart';
-import 'package:my_new_test_app/features/home/pages/friend_management_page.dart';
-import 'package:my_new_test_app/features/home/pages/profile_page.dart';
-import 'package:my_new_test_app/features/home/pages/system_settings_page.dart';
-import 'package:my_new_test_app/providers/tutorial_provider.dart';
-import 'package:my_new_test_app/services/schedule_notifier.dart';
+import 'package:god_life_v1/features/authentication/pages/login_page.dart';
+import 'package:god_life_v1/features/health_connect/pages/health_connect_page.dart';
+import 'package:god_life_v1/features/home/pages/friend_management_page.dart';
+import 'package:god_life_v1/features/home/pages/profile_page.dart';
+import 'package:god_life_v1/features/home/pages/system_settings_page.dart';
+import 'package:god_life_v1/providers/tutorial_provider.dart';
+import 'package:god_life_v1/services/schedule_notifier.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 // ✅ 알림 설정 화면 — 상대 경로 임포트로 “심볼 보장”

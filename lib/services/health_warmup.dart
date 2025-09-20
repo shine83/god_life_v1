@@ -2,7 +2,7 @@
 import 'package:collection/collection.dart';
 import 'package:health/health.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:my_new_test_app/services/health_service.dart';
+import 'package:god_life_v1/services/health_service.dart';
 import 'dart:developer' as dev;
 
 /// 앱 런치 시 한 번 호출해서 "오늘 데이터"를 기기에서 읽어 캐시에 적재한다.

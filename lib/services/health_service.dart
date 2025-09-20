@@ -5,7 +5,7 @@ import 'package:health/health.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 // 권한 모음 (네가 쓰던 파일 경로 그대로)
-import 'package:my_new_test_app/features/health_connect/health_permissions.dart'
+import 'package:god_life_v1/features/health_connect/health_permissions.dart'
     as hp;
 
 /// ====== 화면에서 쓰기 좋은 포인트 ======

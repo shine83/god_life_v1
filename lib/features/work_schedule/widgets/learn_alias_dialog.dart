@@ -1,7 +1,7 @@
 // lib/features/work_schedule/widgets/learn_alias_dialog.dart
 import 'package:flutter/material.dart';
-import 'package:my_new_test_app/core/models/shift_type.dart';
-import 'package:my_new_test_app/services/shift_alias_service.dart';
+import 'package:god_life_v1/core/models/shift_type.dart';
+import 'package:god_life_v1/services/shift_alias_service.dart';
 
 class LearnAliasDialog extends StatefulWidget {
   const LearnAliasDialog({

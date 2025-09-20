@@ -1,7 +1,7 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:my_new_test_app/services/notification_service.dart';
-import 'package:my_new_test_app/services/health_service.dart';
+import 'package:god_life_v1/services/notification_service.dart';
+import 'package:god_life_v1/services/health_service.dart';
 
 class DevTools {
   /// 앱 내 알림 전부 취소

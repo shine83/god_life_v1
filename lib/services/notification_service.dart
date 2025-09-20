@@ -17,7 +17,7 @@ import 'package:timezone/timezone.dart' as tz;
 import 'package:android_intent_plus/android_intent.dart';
 
 // 프리미엄 여부
-import 'package:my_new_test_app/core/premium/premium_gate_compat.dart';
+import 'package:god_life_v1/core/premium/premium_gate_compat.dart';
 
 /// ──────────────────────────────────────────────────────────────
 /// Android 액션 ID
@@ -659,11 +659,10 @@ class NotificationService {
 
 /// ──────────────────────────────────────────────────────────────
 /// Flutter ↔ Android 네이티브 알람 브릿지(MethodChannel)
-/// - Kotlin 측: MainActivity.kt 에 CHANNEL = "com.my_new_test_app/alarm"
+/// - Kotlin 측: MainActivity.kt 에 CHANNEL = "com.god_life_v1/alarm"
 /// - 메소드: scheduleAlarmClock(at, title), cancelAlarmClock()
 class NativeAlarmBridge {
-  static const MethodChannel _channel =
-      MethodChannel('com.my_new_test_app/alarm');
+  static const MethodChannel _channel = MethodChannel('com.god_life_v1/alarm');
 
   /// Android의 setAlarmClock 기반 알람 예약 (잠금화면 깨우기 보장)
   static Future<void> scheduleAlarmClock(DateTime atLocal, String title) async {

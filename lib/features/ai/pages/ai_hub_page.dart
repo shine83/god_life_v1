@@ -2,18 +2,18 @@
 import 'dart:async'; // unawaited 사용
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:my_new_test_app/core/models/work_schedule.dart';
-import 'package:my_new_test_app/features/ai_coach/ai_coach_page.dart';
-import 'package:my_new_test_app/services/health_service.dart';
-import 'package:my_new_test_app/services/work_schedule_service.dart';
+import 'package:god_life_v1/core/models/work_schedule.dart';
+import 'package:god_life_v1/features/ai_coach/ai_coach_page.dart';
+import 'package:god_life_v1/services/health_service.dart';
+import 'package:god_life_v1/services/work_schedule_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:my_new_test_app/dev/notification_lab_page.dart';
+import 'package:god_life_v1/dev/notification_lab_page.dart';
 // ▼ 페이월 & 프리미엄 게이트 (호환 레이어)
-import 'package:my_new_test_app/features/paywall/unified_paywall.dart';
-import 'package:my_new_test_app/core/premium/premium_gate_compat.dart';
+import 'package:god_life_v1/features/paywall/unified_paywall.dart';
+import 'package:god_life_v1/core/premium/premium_gate_compat.dart';
 
 // ▼▼▼ [유지] 리치형 상세 페이지 연결용 임포트
-import 'package:my_new_test_app/features/ai/pages/ai_recommendation_detail_page.dart';
+import 'package:god_life_v1/features/ai/pages/ai_recommendation_detail_page.dart';
 // ▲▲▲
 
 // 앱 시작 시 메인에서 남겨두는 “헬스 동기화 워밍업” 플래그 키

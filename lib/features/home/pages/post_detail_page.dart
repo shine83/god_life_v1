@@ -5,9 +5,9 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:timeago/timeago.dart' as timeago;
 
 // 프리미엄 게이트
-import 'package:my_new_test_app/core/premium/premium_gate_compat.dart';
+import 'package:god_life_v1/core/premium/premium_gate_compat.dart';
 // 페이월 (Unified)
-import 'package:my_new_test_app/features/paywall/unified_paywall.dart';
+import 'package:god_life_v1/features/paywall/unified_paywall.dart';
 
 class PostDetailPage extends StatefulWidget {
   const PostDetailPage({super.key, required this.postId});

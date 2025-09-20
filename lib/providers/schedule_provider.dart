@@ -2,9 +2,9 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_new_test_app/core/models/calendar_event.dart';
-import 'package:my_new_test_app/core/models/work_schedule.dart';
-import 'package:my_new_test_app/services/work_schedule_service.dart';
+import 'package:god_life_v1/core/models/calendar_event.dart';
+import 'package:god_life_v1/core/models/work_schedule.dart';
+import 'package:god_life_v1/services/work_schedule_service.dart';
 
 // 1) WorkScheduleService 프로바이더
 final workScheduleServiceProvider = Provider<WorkScheduleService>((ref) {

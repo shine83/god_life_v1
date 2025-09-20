@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_new_test_app/core/theme/theme_controller.dart';
+import 'package:god_life_v1/core/theme/theme_controller.dart';
 
 class ThemeModeSettingsPage extends ConsumerWidget {
   const ThemeModeSettingsPage({super.key});

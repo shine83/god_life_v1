@@ -43,3 +43,8 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# ✅ 민감한 파일 무시 규칙 추가
+# API 키, 로컬 속성 파일 등은 버전 관리에 포함시키지 않습니다.
+*.env
+/local.properties
